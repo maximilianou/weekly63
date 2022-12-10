@@ -72,3 +72,7 @@ docker exec -it rqlite_vm1  rqlite
 
 <https://www.sqlite.org/lang.html>
 
+#### DB - Server - remove container
+```
+docker rm rqlite_vm1
+```
