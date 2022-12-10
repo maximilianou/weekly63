@@ -67,3 +67,8 @@ docker exec -it rqlite_vm1  rqlite
 +----+---------------+--------+
 
 ```
+
+#### DB - SQLite Quety Language 
+
+<https://www.sqlite.org/lang.html>
+
