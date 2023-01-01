@@ -1,6 +1,6 @@
 # weekly63
 
-nothing in mind
+-----------------
 
 ### Install Nodejs over nvm to have control over different node versions
 
@@ -12,6 +12,8 @@ nothing in mind
 ```
 npx create-next-app something
 ```
+
+-----------------
 
 ### Docker
 
@@ -76,3 +78,11 @@ docker exec -it rqlite_vm1  rqlite
 ```
 docker rm rqlite_vm1
 ```
+
+-----------------
+
+### git
+
+- git message
+
+
