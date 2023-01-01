@@ -104,5 +104,13 @@ into everything over regexp
 ```
 
 - git log
+
+
 - git grep
 - git log --all-match
+
+```
+git log --grep=feat --all-match
+git log --grep=body 
+git log --grep=body --all-match
+```
