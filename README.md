@@ -106,7 +106,6 @@ into everything over regexp
 - git log
 
 
-- git grep
 - git log --all-match
 
 ```
@@ -114,3 +113,19 @@ git log --grep=feat --all-match
 git log --grep=body 
 git log --grep=body --all-match
 ```
+
+- search in all log in all branches
+```
+git log --grep=body --all
+```
+
+- git grep ( search into the content of text files )
+```
+git grep TODO
+
+src/index.ts:// TODO: add one
+src/index.ts:// TODO: add two
+src/index.ts:// TODO: add three
+```
+
+
