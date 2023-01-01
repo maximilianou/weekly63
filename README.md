@@ -105,3 +105,4 @@ into everything over regexp
 
 - git log
 - git grep
+- git log --all-match
