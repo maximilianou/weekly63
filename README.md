@@ -102,3 +102,6 @@ into everything over regexp
 "
 
 ```
+
+- git log
+- git grep
