@@ -83,6 +83,22 @@ docker rm rqlite_vm1
 
 ### git
 
-- git message
+- git commit message
 
+```
+git add .
+git commit -m "this is a simple message, just head commit message"
+```
 
+- git commit message and boby
+
+```
+git add .
+git commit -m "feat(msg): adding message and body
+
+to the commit message
+so we can search and find
+into everything over regexp
+"
+
+```
