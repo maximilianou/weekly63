@@ -138,6 +138,25 @@ debian@debian:~/projects/weekly63$ git config pull.rebase false
 
 root@debian:~# apt install x3270
 
+debian@debian:~/projects/weekly63$ mkdir mvs3801
+debian@debian:~/projects/weekly63$ cd mvs3801
+debian@debian:~/projects/weekly63/mvs3801$ 
+
+
 
 ```
 
+```
+unzip tk4...zip
+cd unattended
+./set_console_mode
+cd ..
+./mvs
+... running ...
+
+
+...
+x3270 localhost:3270
+user: herc01
+pass: 
+```
