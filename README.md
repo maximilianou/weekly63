@@ -128,4 +128,16 @@ src/index.ts:// TODO: add two
 src/index.ts:// TODO: add three
 ```
 
+- JCL Mainframe IBM - Unix 
+```
+https://www.youtube.com/watch?v=UOL0HtlXVKM&t=331s
+
+http://wotho.ethz.ch/tk4-/
+
+debian@debian:~/projects/weekly63$ git config pull.rebase false
+
+root@debian:~# apt install x3270
+
+
+```
 
