@@ -1,7 +1,8 @@
 
 -----
-
-- UML umletino online ipfs
+- Note Taking
+  - IPFS note taking web
+  - UML umletino online ipfs
 - plan naming convention
   - server, vm, docker, kubernetes
   - user
@@ -11,6 +12,7 @@
 - hardware
   - personal laptop
   - homelab computer
+  - web3
 - Goals
   - Simplicity
   - Open Source
