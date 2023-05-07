@@ -12,7 +12,10 @@
     - kubernetes
   - user, group
   - access, ssh, vpn
-  - components, db, fs, app
+  - components
+    - db
+    - fs
+    - app
 - hardware
   - personal laptop
   - homelab computer
