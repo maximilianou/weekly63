@@ -2,6 +2,8 @@
 -----
 - Note Taking
   - IPFS note taking web
+    - Markdown web
+    - Table of content Tree
   - UML umletino online ipfs
 - plan naming convention
   - server, vm, docker, kubernetes
