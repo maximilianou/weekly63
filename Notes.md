@@ -6,11 +6,13 @@
     - Table of content Tree
   - UML umletino online ipfs
 - plan naming convention
-  - server, vm, docker, kubernetes
-  - user
-  - group
+  - server
+    - vm
+    - docker
+    - kubernetes
+  - user, group
   - access, ssh, vpn
-  - components, db, storage, app
+  - components, db, fs, app
 - hardware
   - personal laptop
   - homelab computer
