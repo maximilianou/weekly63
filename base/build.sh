@@ -10,7 +10,8 @@ c89 -o bin/args src/args/args.c
 echo ""
 rm bin/args
 
-c89 -o bin/test_note src/test/test_note.c
+c89 -o lib/note.o -c src/test/note.c
+c89 -o bin/test_note src/test/test_note.c lib/note.o
 ./bin/test_note
 echo ""
 rm bin/test_note
