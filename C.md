@@ -1,35 +1,20 @@
 
 ```
 
-
  find .
-
 .
-
 ./base
-
 ./base/src
-
 ./base/src/prn
-
 ./base/src/prn/print.c
-
 ./base/src/args
-
 ./base/src/args/args.c
-
 ./base/build.sh
-
 ./base/test
-
 ./base/print.o
-
 ./base/bin
-
 ./base/bin/prn
-
 ./base/bin/args
-
 ./base/args.o
 
 
