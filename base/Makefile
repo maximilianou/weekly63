@@ -1,4 +1,4 @@
-
+# base/Makefile
 
 note.o: 
 	c89 -o lib/note.o -c src/test/note.c
@@ -8,3 +8,7 @@ test_note: note.o
 
 test: test_note
 	./bin/test_note
+
+clean:
+	rm lib/note.o
+	rm bin/test_note

@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# base/buld.sh
 c89 -o bin/printing src/printing/print.c
 ./bin/printing
 echo ""
