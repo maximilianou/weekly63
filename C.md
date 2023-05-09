@@ -1,5 +1,13 @@
 
+
 ```
+
+Functional C
+https://research.utwente.nl/en/publications/functional-c
+
+
+Object Oriented ANSI C
+https://www.cs.rit.edu/~ats/books/ooc.pdf
 
  find .
 .
