@@ -19,6 +19,7 @@
 - hardware
   - personal laptop
   - homelab computer
+    - https://github.com/lisenet/kubernetes-homelab
   - web3
 - Goals
   - Simplicity
