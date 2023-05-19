@@ -6,11 +6,26 @@
 void createNote_test(){  
   Note * firstNote = createNote();
   assert( firstNote != NULL );
+  /* assert( firstNote == NULL ); */
+}
+void removeNote_test(){  
+  Note * firstNote = createNote();
+  firstNote->title = "TDD title";
+  firstNote->body  = "TDD body";
+  assert( firstNote->title != NULL );
+  /*  assert( firstNote->title == NULL ); */
+  removeNote(firstNote);
+  assert( firstNote->title == NULL );
+  /* assert( firstNote->title != NULL ); */
+
 }
 
 int main(int argc, char *argv[], char* env[]){
 
   createNote_test();
+  removeNote_test();
+
+
   /* TODO: create a note */
   /* TODO: verify note created */
   Note * firstNote = createNote();
