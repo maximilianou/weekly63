@@ -12,8 +12,8 @@ echo ""
 rm bin/args
 
 mkdir -p build/lib
-c89 -o build/lib/note.o -c src/test/note.c
-c89 -o bin/note_test src/test/note_test.c build/lib/note.o
+c89 -o build/lib/note.o -c src/note/note.c
+c89 -o bin/note_test src/test/note/note_test.c build/lib/note.o
 ./bin/note_test
 echo ""
 rm bin/note_test

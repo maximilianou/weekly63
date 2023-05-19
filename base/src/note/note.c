@@ -12,9 +12,9 @@ Note* createNote(){
 }
 
 void removeNote(Note* note){
-  printf("\n %p, %d \n", note, *note  );
+  /* printf("\n %p, %d \n", note, *note ); */
   free(note);
-  printf("\n %p, %d \n", note, *note );
+  /* printf("\n %p, %d \n", note, *note ); */
 }
 
 void showNote(Note* note){

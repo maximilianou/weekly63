@@ -1,6 +1,6 @@
 /* base/src/test/test_note.c */
 #include <assert.h>
-#include "note.h"
+#include "../../note/note.h"
 
 
 void createNote_test(){  
