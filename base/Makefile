@@ -1,14 +1,23 @@
 # base/Makefile
 
-note.o: 
-	c89 -o lib/note.o -c src/test/note.c
+all: test clean
 
-test_note: note.o
-	c89 -o bin/test_note src/test/test_note.c lib/note.o
+test: note_test
+	./bin/note_test
 
-test: test_note
-	./bin/test_note
+note.o: directory
+	c89 -c src/test/note.c -o build/lib/note.o
+
+note_test: note.o 
+	c89 src/test/note_test.c build/lib/note.o -o bin/note_test
+
+directory:
+	mkdir -p build/lib
 
 clean:
-	rm lib/note.o
-	rm bin/test_note
+	rm -r build
+	rm bin/note_test
+
+variable:
+	echo $(CXX)
+	echo $(CC)

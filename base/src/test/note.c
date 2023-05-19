@@ -12,7 +12,9 @@ Note* createNote(){
 }
 
 void removeNote(Note* note){
+  printf("\n %i \n", note == NULL);
   free(note);
+  printf("\n %i \n", note == NULL);
 }
 
 void showNote(Note* note){

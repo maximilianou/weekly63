@@ -1,8 +1,16 @@
 /* base/src/test/test_note.c */
+#include <assert.h>
 #include "note.h"
 
-int main(int argc, char *argv[]){
 
+void createNote_test(){  
+  Note * firstNote = createNote();
+  assert( firstNote != NULL );
+}
+
+int main(int argc, char *argv[], char* env[]){
+
+  createNote_test();
   /* TODO: create a note */
   /* TODO: verify note created */
   Note * firstNote = createNote();
