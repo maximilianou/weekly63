@@ -9,7 +9,7 @@ int logfile(char* logfilename, char* logcontent){
   if( !logfile ){
     perror("fopen_failed");
     exit(EXIT_FAILURE);
-//    return EXIT_FAILURE;
+/*    return EXIT_FAILURE; */
   }
   fputs(logcontent, logfile);
   fflush(logfile);
@@ -23,7 +23,7 @@ int flogfile(char* logfilename, char* format_content, char* logcontent){
   if( !logfile ){
     perror("fopen_failed");
     exit(EXIT_FAILURE);
-//    return EXIT_FAILURE;
+/*    return EXIT_FAILURE; */
   }
   fprintf(logfile, format_content, logcontent);
   fflush(logfile);
@@ -32,7 +32,7 @@ int flogfile(char* logfilename, char* format_content, char* logcontent){
 }
 
 int catfile( char* argv ){
-  enum { buff_max = 32, };
+  enum { buff_max = 32 };
   int ret = EXIT_FAILURE;
   char buffer[buff_max] = { 0 };
   FILE* instream = fopen(  argv, "r" );
@@ -50,7 +50,7 @@ int catfile( char* argv ){
   return ret;
 }
 
-int main(int argc, char* argv[argc + 1]){
+void initial_test(){
   char* logfile_name = "build/tmp/logfile.log";
   char* logfile_rename = "build/tmp/logfile_rename.log";
 
@@ -71,9 +71,44 @@ int main(int argc, char* argv[argc + 1]){
   remove( logfile_rename );
 
   assert( access(logfile_rename, F_OK) != 0 );
-  assert( access(logfile_name, F_OK) != 0 );
+  assert( access(logfile_name, F_OK) != 0 );    
+}
+
+void logfile_test(){
+  char* logfile_name = "//'TEST.UTIL.UTSID1H.CLOG1'";
+  char* logfile_rename = "//'TEST.UTIL.UTSID1H.CLOG2'";
+
+  logfile( logfile_name, "sviluppo in linguagio C leggere e scrivere sul-dal MVS dataset\n" );
+  logfile( logfile_name, "stampare nel output del unix il contenuto di MVS dataset\n" );
+  logfile( logfile_name, "rinominare MVS dataset\n" );
+
+  rename( logfile_name, logfile_rename );
+    
+  flogfile( logfile_rename, "[%s]\n", "Formated text fprintf()");
+
+  catfile( logfile_rename );
+/*
+  remove( logfile_name );
+  remove( logfile_rename );
+*/
+}
+
+
+/* int main(int argc, char* argv[argc + 1]){ */
+int main(int argc, char* argv[]){
+
+/*  initial_test(); */
+  logfile_test();
+
 
 }
+
+
+/*
+if ( (stream = fopen("myfile2.dat", "rb+, lrecl=80,\
+blksize=240, recfm=fb, type=record")) == NULL )
+printf("Could not open data file for read update\n");
+*/
 
 /*
 REFERENCE:

@@ -15,6 +15,19 @@ https://www.cs.rit.edu/~ats/books/ooc.pdf
 Modern C
 Jens Gustedt. Modern C. Manning, 2019, 9781617295812. ffhal-02383654
 
+
+
+Regular program termination should use a return from main
+
+Use exit from a function that may terminate the regular control flow.
+
+Don’t use functions other than exit for program termination, unless
+you have to inhibit the execution of library cleanups
+
+Use as many assert s as you can to confirm runtime properties.
+
+In production compilations, use NDEBUG to switch off all assert
+
 ```
 
 ```

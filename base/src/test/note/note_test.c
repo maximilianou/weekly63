@@ -28,8 +28,8 @@ int main(int argc, char *argv[], char* env[]){
 
   /* TODO: create a note */
   /* TODO: verify note created */
-  Note * firstNote = createNote();
-  Note * secondNote = firstNote;
+  Note* firstNote = createNote();
+  Note* secondNote = firstNote;
 
   /* TODO: show note */
   /* TODO: verify note showed */
