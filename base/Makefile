@@ -26,3 +26,4 @@ variable:
 ###
 files: directory
 	$(CC) src/files/files.c -o build/bin/files
+	./build/bin/files
