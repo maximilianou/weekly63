@@ -123,4 +123,85 @@ Character Meaning Conversion
 "+" '+' for positive values, '-' for negative Signed
 
 
+
+ctype.h
+
+ABLE 8.11. Character classifiers. The third column indicates whether
+C implementations may extend these classes with platform-specific characters, such as 'ä' as a lowercase character or 'e' as punctuation.
+Name Meaning C locale Extended
+islower Lowercase 'a' · · · 'z' Yes
+isupper Uppercase 'A' · · · 'Z' Yes
+isblank Blank '␣', '\t' Yes
+isspace Space '␣', '\f', '\n', '\r', '\t', '\v' Yes
+isdigit Decimal '0' · · · '9' No
+isxdigit Hexadecimal '0' · · · '9', 'a' · · · 'f', 'A' · · · 'F' No
+iscntrl Control '\a', '\b', '\f', '\n', '\r', '\t', '\v' Yes
+isalnum Alphanumeric isalpha(x)||isdigit(x) Yes
+isalpha Alphabet islower(x)||isupper(x) Yes
+isgraph Graphical (!iscntrl(x)) && (x != '␣') Yes
+isprint Printable !iscntrl(x) Yes
+ispunct Punctuation isprint(x)&&!(isalnum(x)||isspace(x)) Yes
+'\'' Quote
+'\"' Double quotes
+'\?' Question mark
+'\\' Backslash
+'\a' Alert
+'\b' Backspace
+'\f' Form feed
+'\n' New line
+'\r' Carriage return
+'\t' Horizontal tab
+'\v' Vertical tab
+TABLE 8.12. Special characters in character and string literals
+
+
+
+
+TABLE 8.13. strftime format specifiers. Those selected in the Locale
+column may differ dynamically according to locale runtime settings; see
+subsection 8.6. Those selected in the ISO 8601 column are specified by
+that standard.
+Spec Meaning Locale ISO 8601
+"%S" Second ("00" to "60")
+"%M" Minute ("00" to "59")
+"%H" Hour ("00" to "23").
+"%I" Hour ("01" to "12").
+"%e" Day of the month ("␣1" to "31")
+"%d" Day of the month ("01" to "31")
+"%m" Month ("01" to "12")
+"%B" Full month name X
+"%b" Abbreviated month name X
+"%h" Equivalent to "%b" X
+"%Y" Year
+"%y" Year ("00" to "99")
+"%C" Century number (year/100)
+"%G" Week-based year; the same as "%Y", except if the ISO
+week number belongs another year
+X
+"%g" Like "%G", ("00" to "99") X
+"%u" Weekday ("1" to "7"), Monday being "1"
+"%w" Weekday ("0" to "6", Sunday being "0"
+"%A" Full weekday name X
+"%a" Abbreviated weekday name X
+"%j" Day of the year ("001" to "366")
+"%U" Week number in the year ("00" to "53"), starting at Sunday
+"%W" Week number in the year ("00" to "53"), starting at Monday
+"%V" Week number in the year ("01" to "53"), starting with
+first four days in the new year
+X
+"%Z" Timezone name X
+"%z" "+hhmm" or "-hhmm", the hour and minute offset from
+UTC
+"%n" Newline
+"%t" Horizontal tabulator
+"%%" Literal "%"
+"%x" Date X
+"%D" Equivalent to "%m/%d/%y"
+"%F" Equivalent to "%Y-%m-%d" X
+"%X" Time X
+"%p" Either "AM" or "PM": noon is "PM", midnight is "AM" X
+"%r" Equivalent to "%I:%M:%S␣%p" X
+"%R" Equivalent to "%H:%M"
+"%T" Equivalent to "%H:%M:%S" X
+"%c" Preferred date and time representation 
 */
