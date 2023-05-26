@@ -162,7 +162,7 @@ Character Meaning Conversion
 ctype.h
 
 ABLE 8.11. Character classifiers. The third column indicates whether
-C implementations may extend these classes with platform-specific characters, such as 'ä' as a lowercase character or 'e' as punctuation.
+C implementations may extend these classes with platform-specific characters, such as 'ä' as a lowercase character or 'e' as punctuation.
 Name Meaning C locale Extended
 islower Lowercase 'a' · · · 'z' Yes
 isupper Uppercase 'A' · · · 'Z' Yes
@@ -219,8 +219,8 @@ X
 "%A" Full weekday name X
 "%a" Abbreviated weekday name X
 "%j" Day of the year ("001" to "366")
-"%U" Week number in the year ("00" to "53"), starting at Sunday
-"%W" Week number in the year ("00" to "53"), starting at Monday
+"%U" Week number in the year ("00" to "53"), starting at Sunday
+"%W" Week number in the year ("00" to "53"), starting at Monday
 "%V" Week number in the year ("01" to "53"), starting with
 first four days in the new year
 X
